@@ -1,0 +1,38 @@
+{
+  "version": "0.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "private": true,
+  "scripts": {
+    "start": "vite",
+    "copy": "cp node_modules/@socketsupply/tonic/dist/tonic.min.js src/robots.txt ./public",
+    "lint": "standardx -v",
+    "build": "mkdir -p public && rm -rf ./public/* && npm run copy && vite build",
+    "preversion": "check-deps . 5 && npm run lint",
+    "postversion": "git push && git push --tags",
+    "test": "esbuild --bundle --platform=browser --format=esm test/test.js | tap-ssc --html=test/index.html | tap-arc"
+  },
+  "dependencies": {
+    "@nichoth/routes": "^3.0.7",
+    "@socketsupply/tonic": "^15.1.1",
+    "route-event": "^4.1.8"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "7.19.1",
+    "@nichoth/check-max-deps": "0.0.2",
+    "esbuild": "^0.15.11",
+    "postcss-nesting": "^11.2.2",
+    "standardx": "^7.0.0",
+    "tap-arc": "^0.3.5",
+    "tapzero": "^0.6.1",
+    "vite": "^4.3.9"
+  },
+  "standardx": {
+    "ignore": [
+      "public/*"
+    ]
+  },
+  "directories": {
+    "test": "test"
+  }
+}

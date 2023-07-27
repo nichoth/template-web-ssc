@@ -1,0 +1,18 @@
+{
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false
+  },
+  "rules": {
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxEOF": 1
+      }
+    ],
+    "indent": [ "error", 4 ],
+    "comma-dangle": "off",
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }]
+  }
+}
