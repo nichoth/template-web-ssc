@@ -4,6 +4,7 @@
     "requireConfigFile": false
   },
   "rules": {
+    "operator-linebreak": ["error", "after"],
     "no-multiple-empty-lines": [
       "error",
       {

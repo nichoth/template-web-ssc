@@ -4,8 +4,10 @@
   "main": "src/index.js",
   "private": true,
   "scripts": {
-    "start": "vite",
-    "copy": "cp node_modules/@socketsupply/tonic/dist/tonic.min.js src/robots.txt ./public",
+    "start": "npm run copy && vite",
+    "ssc-build": "esbuild --bundle src/index.js > dist/index.js",
+    "ssc-start": "npm run ssc-build && ssc build -r",
+    "copy": "cp node_modules/@socketsupply/tonic/dist/tonic.min.js ./_public/robots.txt ./public",
     "lint": "standardx -v",
     "build": "mkdir -p public && rm -rf ./public/* && npm run copy && vite build",
     "preversion": "check-deps . 5 && npm run lint",
@@ -14,6 +16,7 @@
   },
   "dependencies": {
     "@nichoth/routes": "^3.0.7",
+    "@socketsupply/socket": "^0.3.3",
     "@socketsupply/tonic": "^15.1.1",
     "route-event": "^4.1.8"
   },

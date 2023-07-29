@@ -16,13 +16,21 @@ class TheApp extends Tonic {
         super()
         const { location } = window
         this.state = {
-            route: (location.pathname + location.search),
+            // for ssc not having a location.pathname property
+            route: location.pathname.includes('index.html') ?
+                '/' :
+                (location.pathname + location.search),
             count: 0
         }
 
         this.router = createRouter()
         const onRoute = Route()
-        onRoute((path) => {
+        onRoute((_path) => {
+            // for ssc
+            const path = _path.includes('Contents/Resources/index.html') ?
+                '/' :
+                _path
+
             if (path !== this.state.route) {
                 this.state.route = path
                 this.reRender()
