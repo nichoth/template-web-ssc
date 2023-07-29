@@ -2,7 +2,7 @@
 
 Use the same source code to build a website and a native [ssc app](https://github.com/socketsupply/socket).
 
-Because this is a single page app, and [route-event](https://github.com/nichoth/route-event) listens for click events on the document.body, that means URL-based routing will work, even though the native application does not have URLs.
+Because [route-event](https://github.com/nichoth/route-event) listens for click events on the document.body, that means URL-based routing will work, even though the native application does not have URLs.
 
 -------
 
