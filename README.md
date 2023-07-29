@@ -47,4 +47,6 @@ We are using the `--bundle` flag with `esbuild` when building for `ssc` because 
 TypeError: Module specifier, '@socketsupply/tonic' does not start with "/", "./", or "../". 
 ```
 
+-------
+
 Is there a way to check at runtime if this is running in ssc or browser?
