@@ -49,4 +49,8 @@ TypeError: Module specifier, '@socketsupply/tonic' does not start with "/", "./"
 
 -------
 
-Is there a way to check at runtime if this is running in ssc or browser?
+Is there a way to check at runtime if this is running in ssc or browser? We are checking the pathname in `index.js`
+
+```js
+route: location.pathname.includes('Contents/Resources/index.html') ?
+```
