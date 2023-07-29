@@ -27,16 +27,16 @@ npm run build-web
 ```
 
 ### ssc
+First compile code to `dist`, then run `ssc build`, with `dist` as the value for `copy` in `socket.ini`.
+
 ```
 npm run build-ssc
 ```
 
-### everything
+### build everything
 ```
 npm run build
 ```
-
-First compile code to `dist`, then run `ssc build`, with `dist` as the value for `copy`.
 
 
 ## note
