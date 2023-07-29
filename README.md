@@ -21,12 +21,12 @@ npm run start-ssc
 ## build
 `public` dir is for website, `dist` dir is for ssc app
 
-### web
+### build for the web
 ```
 npm run build-web
 ```
 
-### ssc
+### build for ssc
 First compile code to `dist`, then run `ssc build`, with `dist` as the value for `copy` in `socket.ini`.
 
 ```
@@ -46,3 +46,5 @@ We are using the `--bundle` flag with `esbuild` when building for `ssc` because 
 ```
 TypeError: Module specifier, '@socketsupply/tonic' does not start with "/", "./", or "../". 
 ```
+
+Is there a way to check at runtime if this is running in ssc or browser?
