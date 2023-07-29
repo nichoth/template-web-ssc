@@ -6,9 +6,43 @@ Because [route-event](https://github.com/nichoth/route-event) listens for click 
 
 -------
 
+## develop
+
+### start a web server
+```
+npm start
+```
+
+### start an ssc project
+```
+npm run start-ssc
+```
 
 ## build
-
 `public` dir is for website, `dist` dir is for ssc app
 
+### web
+```
+npm run build-web
+```
+
+### ssc
+```
+npm run build-ssc
+```
+
+### everything
+```
+npm run build
+```
+
 First compile code to `dist`, then run `ssc build`, with `dist` as the value for `copy`.
+
+
+## note
+
+We are using the `--bundle` flag with `esbuild` when building for `ssc` because trying to use an `importmap` in HTML results in this error:
+
+```
+TypeError: Module specifier, '@socketsupply/tonic' does not start with "/", "./", or "../". 
+```

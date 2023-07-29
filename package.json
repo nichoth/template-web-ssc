@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "npm run copy && vite",
-    "ssc-start": "mkdir -p ./dist && rm -rf ./dist/* && postcss src/style.css --use postcss-nesting > dist/style.css && cp ./src/index.html dist && esbuild --bundle src/index.js > dist/index.js && ssc build -r",
+    "start-ssc": "mkdir -p ./dist && rm -rf ./dist/* && postcss src/style.css --use postcss-nesting > dist/style.css && cp ./src/index.html dist && esbuild --bundle src/index.js > dist/index.js && ssc build -r",
     "copy": "cp node_modules/@socketsupply/tonic/dist/tonic.min.js ./_public/robots.txt ./public",
     "lint": "standardx -v",
     "build": "npm run build-ssc && npm run build-web",
