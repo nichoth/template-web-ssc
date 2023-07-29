@@ -17,7 +17,7 @@ class TheApp extends Tonic {
         const { location } = window
         this.state = {
             // for ssc not having a location.pathname property
-            route: location.pathname.includes('index.html') ?
+            route: location.pathname.includes('Contents/Resources/index.html') ?
                 '/' :
                 (location.pathname + location.search),
             count: 0
