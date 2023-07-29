@@ -11,7 +11,7 @@
     "build": "npm run build-ssc && npm run build-web",
     "build-ssc": "mkdir -p dist && rm -rf ./dist/* && postcss src/style.css --use postcss-nesting > dist/style.css && cp ./src/index.html dist && esbuild --bundle src/index.js > dist/index.js && ssc build",
     "build-web": "mkdir -p public && rm -rf ./public/* && npm run copy && vite build",
-    "preversion": "check-deps . 5 && npm run lint",
+    "preversion": "check-deps . 11 && npm run lint",
     "postversion": "git push && git push --tags",
     "test": "esbuild --bundle --platform=browser --format=esm test/test.js | tap-ssc --html=test/index.html | tap-arc"
   },
