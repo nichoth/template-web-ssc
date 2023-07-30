@@ -8,7 +8,7 @@ This uses [single-page application architecture](https://developer.mozilla.org/e
 
 ## develop
 
-### start a web server
+### start a local web server
 ```
 npm start
 ```
@@ -21,12 +21,12 @@ npm run start-ssc
 ## build
 `public` dir is for website, `dist` dir is for ssc app
 
-### build for the web
+### build for browsers
 ```
 npm run build-web
 ```
 
-### build for ssc
+### build a native app
 First compile code to `dist`, then run `ssc build`, with `dist` as the value for `copy` in `socket.ini`.
 
 ```
