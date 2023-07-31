@@ -24,12 +24,12 @@
   "devDependencies": {
     "@babel/eslint-parser": "7.19.1",
     "@nichoth/check-max-deps": "0.0.2",
+    "@socketsupply/tapzero": "^0.7.1",
     "esbuild": "^0.15.11",
     "postcss-cli": "^10.1.0",
     "postcss-nesting": "^11.2.2",
     "standardx": "^7.0.0",
     "tap-arc": "^0.3.5",
-    "tapzero": "^0.6.1",
     "vite": "^4.3.9"
   },
   "standardx": {
