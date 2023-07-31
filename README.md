@@ -2,7 +2,7 @@
 
 Use the same source code to build a website and a native app with [ssc](https://github.com/socketsupply/socket).
 
-This uses [single-page application architecture](https://developer.mozilla.org/en-US/docs/Glossary/SPA) & client-side routing. Because [route-event](https://github.com/nichoth/route-event) listens for click events on the document.body, URL-based routing will work, even though the native application does not have URLs.
+This uses [single-page application architecture](https://developer.mozilla.org/en-US/docs/Glossary/SPA) & client-side routing. Because [route-event](https://github.com/nichoth/route-event) listens for clicks on the document.body, URL-based routing will work, even though the native application does not have URLs.
 
 -------
 
