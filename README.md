@@ -38,10 +38,8 @@ npm run build-ssc
 npm run build
 ```
 
-
-## note
-
-We are using the `--bundle` flag with `esbuild` when building for `ssc` because trying to use an `importmap` in HTML results in this error:
+> [!NOTE]  
+> We are using the `--bundle` flag with `esbuild` when building for `ssc` because trying to use an `importmap` in HTML results in this error:
 
 ```
 TypeError: Module specifier, '@socketsupply/tonic' does not start with "/", "./", or "../". 
@@ -49,7 +47,7 @@ TypeError: Module specifier, '@socketsupply/tonic' does not start with "/", "./"
 
 -------
 
-Is there a way to check at runtime if this is running via ssc or browser? We are checking the pathname in `index.js`
+Is there a better way to check at runtime if this is running via ssc or browser? We are checking the pathname in `index.js`
 
 ```js
 route: location.pathname.includes('Contents/Resources/index.html') ?
