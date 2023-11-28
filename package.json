@@ -18,13 +18,13 @@
   "dependencies": {
     "@nichoth/routes": "^3.0.7",
     "@socketsupply/socket": "^0.3.3",
-    "@socketsupply/tonic": "^15.1.1",
+    "@nichoth/tonic": "^15.1.1",
     "route-event": "^4.1.8"
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.19.1",
     "@nichoth/check-max-deps": "0.0.2",
-    "@socketsupply/tapzero": "^0.7.1",
+    "@nichoth/tapzero": "^0.8.4",
     "esbuild": "^0.15.11",
     "postcss-cli": "^10.1.0",
     "postcss-nesting": "^11.2.2",
