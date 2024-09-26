@@ -31,7 +31,7 @@
     "postcss-nesting": "^11.2.2",
     "standardx": "^7.0.0",
     "tap-arc": "^0.3.5",
-    "vite": "^4.3.9"
+    "vite": "^4.5.5"
   },
   "standardx": {
     "ignore": [
